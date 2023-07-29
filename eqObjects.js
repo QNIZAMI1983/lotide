@@ -22,7 +22,7 @@ const eqArrays = function(arr1, arr2) {
       const value1 = object1[key];
       const value2 = object2[key];
   
-      // Check if the value is an array
+      // Check if both values are arrays
       if (Array.isArray(value1) && Array.isArray(value2)) {
         // Use eqArrays function to compare arrays
         if (!eqArrays(value1, value2)) {
@@ -42,15 +42,19 @@ const eqArrays = function(arr1, arr2) {
   // Test the eqObjects function with sample objects
   const shirtObject = { color: "red", size: "medium" };
   const anotherShirtObject = { size: "medium", color: "red" };
+  console.log("Test 1:");
   assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
   
   const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+  console.log("Test 2:");
   assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
   
   const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
   const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
+  console.log("Test 3:");
   assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true);
   
   const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
+  console.log("Test 4:");
   assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false);
   
