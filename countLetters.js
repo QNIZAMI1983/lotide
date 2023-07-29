@@ -15,7 +15,7 @@ const countLetters = function (sentence) {
         if (/[a-zA-Z]/.test(char)) {
             //convert the letter   to uppercase to make sure small case and upper case are counted
             const letter = char.toUpperCase();
-            if (letterCounts[letters]) {
+            if (letterCounts[letter]) {
                 //check if the letter already exists in the letterCounts obj
                 letterCounts[letter]++;
                 // if exits = true, increment the count by 1
@@ -28,3 +28,4 @@ const countLetters = function (sentence) {
     }
     return letterCounts;
 };
+console.log(countLetters("This is a sentence"));
