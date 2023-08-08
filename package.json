@@ -1,8 +1,8 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "qnizami lotide",
-  "main": "assertArraysEqual.js",
+  "description": "qnizami1983 lotide",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -21,7 +21,7 @@
   "keywords": [
     "lotide"
   ],
-  "author": "QNIZAMI1983",
+  "author": "Qais Nizami <qais.nizami@gmail.com> (https://github.com/QNIZAMI1983"),
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/QNIZAMI1983/lotide/issues"
