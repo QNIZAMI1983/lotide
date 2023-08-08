@@ -9,8 +9,7 @@ const eqObjects = require ('./eqObjects');
 const without= require ('./without');
 const countLetters = require ('./countLetters');
 const countOnly = require ('./countOnly');
-
-
+const findKey = require('./findKey');
 
 module.exports = {
   head: head,
@@ -23,4 +22,6 @@ module.exports = {
   without: without,
   countLetters: countLetters,
   countOnly: countOnly,
+  findKey: findKey,
+
 };
