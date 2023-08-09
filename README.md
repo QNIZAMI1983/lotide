@@ -23,7 +23,7 @@ npm install @qnizami1983/lotide
 const _ = require('@qnizami1983/lotide');`
 ```
 ## Functions and Documentation
-**head(array)**
+**`head(array)`**
 Returns the first element of the array.
 
 ***Example:***
