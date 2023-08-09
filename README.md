@@ -23,7 +23,7 @@ npm install @qnizami1983/lotide
 const _ = require('@qnizami1983/lotide');`
 ```
 ## Functions and Documentation
-**`head(array`** </br></br> 
+**`head(array)`** </br></br> 
 Returns the first element of the array.
 
 <b>Example:</b>
@@ -31,7 +31,7 @@ Returns the first element of the array.
 ```javascript
 const firstElement = _.head([1, 2, 3]); // Returns 1
 ```
-**`tail(array`** </br></br>
+**`tail(array)`** </br></br>
 Returns a new array with all elements except the first one.
 
 <b>Example:</b>
@@ -39,7 +39,7 @@ Returns a new array with all elements except the first one.
 ```javascript
 const remainingElements = _.tail([1, 2, 3]); // Returns [2, 3]
 ```
-**`middle(array`** </br></br>
+**`middle(array)`** </br></br>
 Returns an array containing the middle elements of the input array.
 
 <b>Example:</b>
@@ -47,7 +47,7 @@ Returns an array containing the middle elements of the input array.
 ```javascript
 const middleElements = _.middle([1, 2, 3, 4, 5]); // Returns [2, 3]
 ```
-**`assertArraysEqual(actual, expected`** </br></br>
+**`assertArraysEqual(actual, expected)`** </br></br>
 Compares two arrays for equality and logs the result.
 
 <b>Example:</b>
@@ -55,7 +55,7 @@ Compares two arrays for equality and logs the result.
 ```javascript
 _.assertArraysEqual([1, 2, 3], [1, 2, 3]); // Logs "✅ Assertion Passed: [1, 2, 3] === [1, 2, 3]"
 ```
-**`assertEqual(actual, expected`** </br></br>
+**`assertEqual(actual, expected)`** </br></br>
 Compares two values for equality and logs the result.
 
 <b>Example:</b>
@@ -63,7 +63,7 @@ Compares two values for equality and logs the result.
 ```javascript
 _.assertEqual(5, 5); // Logs "✅ Assertion Passed: 5 === 5"
 ```
-**`assertObjectsEqual(actual, expected`** </br></br>
+**`assertObjectsEqual(actual, expected)`** </br></br>
 Compares two objects for equality and logs the result.
 
 <b>Example:</b>
@@ -71,7 +71,7 @@ Compares two objects for equality and logs the result.
 ```javascript
 _.assertObjectsEqual({ a: 1, b: 2 }, { b: 2, a: 1 }); // Logs "✅ Assertion Passed: [object Object] === [object Object]"
 ```
-**`without(source, itemsToRemove`** </br></br>
+**`without(source, itemsToRemove)`** </br></br>
 Returns a new array with elements from the source array without the specified items.
 
 <b>Example:</b>
@@ -79,7 +79,7 @@ Returns a new array with elements from the source array without the specified it
 ```javascript
 const filteredArray = _.without([1, 2, 3, 4, 5], [3, 4]); // Returns [1, 2, 5]
 ```
-**`countLetters(sentence`** </br></br>
+**`countLetters(sentence)`** </br></br>
 Returns an object containing the count of each letter in the input sentence.
 
 <b>Example:</b>
@@ -87,7 +87,7 @@ Returns an object containing the count of each letter in the input sentence.
 ```javascript
 const letterCounts = _.countLetters("Hello, World!"); // Returns an object with letter counts
 ```
-**`countOnly(allItems, itemsToCount`** </br></br>
+**`countOnly(allItems, itemsToCount)`** </br></br>
 Returns an object with the counts of specified items in the input array.
 
 <b>Example:</b>
@@ -95,7 +95,7 @@ Returns an object with the counts of specified items in the input array.
 ```javascript
 const countResult = _.countOnly(["a", "b", "c", "a", "b"], { a: true, b: true }); // Returns an object with counts
 ```
-**`findKey(object, callback`** </br></br>
+**`findKey(object, callback)`** </br></br>
 Returns the first key in the object that satisfies the given callback.
 
 <b>Example:</b>
@@ -103,7 +103,7 @@ Returns the first key in the object that satisfies the given callback.
 ```javascript
 const foundKey = _.findKey({ a: 1, b: 2, c: 3 }, x => x === 2); // Returns "b"
 ```
-**`findKeyByValue(object, value`** </br></br>
+**`findKeyByValue(object, value)`** </br></br>
 Returns the key in the object with the specified value.
 
 <b>Example:</b>
@@ -111,7 +111,7 @@ Returns the key in the object with the specified value.
 ```javascript
 const foundKeyByValue = _.findKeyByValue({ a: 1, b: 2, c: 3 }, 2); // Returns "b"
 ```
-**`flatten(arr`** </br></br>
+**`flatten(arr)`** </br></br>
 Returns a new array with all nested arrays flattened.
 
 <b>Example:</b>
@@ -119,7 +119,7 @@ Returns a new array with all nested arrays flattened.
 ```javascript
 const flattenedArray = _.flatten([[1, 2], [3, 4], [5, 6]]); // Returns [1, 2, 3, 4, 5, 6]
 ```
-**`letterPositions(sentence`** </br></br>
+**`letterPositions(sentence)`** </br></br>
 Returns an object containing arrays of indices for each letter in the input sentence.
 
 <b>Example:</b>
@@ -127,7 +127,7 @@ Returns an object containing arrays of indices for each letter in the input sent
 ```javascript
 const letterPositionObj = _.letterPositions("Hello, World!"); // Returns an object with arrays of indices
 ```
-**`map(array, callback`** </br></br>
+**`map(array, callback)`** </br></br>
 Returns a new array with the results of applying the callback function to each element.
 
 <b>Example:</b>
@@ -135,7 +135,7 @@ Returns a new array with the results of applying the callback function to each e
 ```javascript
 const mappedArray = _.map([1, 2, 3], x => x * 2); // Returns [2, 4, 6]
 ```
-**`takeUntil(array, callback`** </br></br>
+**`takeUntil(array, callback)`** </br></br>
 Returns a new array containing elements from the input array until the callback returns a truthy value.
 
 <b>Example:</b>
