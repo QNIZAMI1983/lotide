@@ -23,15 +23,15 @@ npm install @qnizami1983/lotide
 const _ = require('@qnizami1983/lotide');`
 ```
 ## Functions and Documentation
-**`head(array)`**
+**`head(array)`** </br>
 Returns the first element of the array.
 
-****Example:****
+***Example:***
 
 ```javascript
 const firstElement = _.head([1, 2, 3]); // Returns 1
 ```
-**tail(array)**
+**tail(array)** </br>
 Returns a new array with all elements except the first one.
 
 ***Example:***
