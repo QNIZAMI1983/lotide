@@ -26,7 +26,7 @@ const _ = require('@qnizami1983/lotide');`
 **`head(array)`**
 Returns the first element of the array.
 
-***Example:***
+****Example:****
 
 ```javascript
 const firstElement = _.head([1, 2, 3]); // Returns 1
