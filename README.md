@@ -23,122 +23,122 @@ npm install @qnizami1983/lotide
 const _ = require('@qnizami1983/lotide');`
 ```
 ## Functions and Documentation
-**`head(array)`** </br>
+**`head(array`** </br></br> 
 Returns the first element of the array.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const firstElement = _.head([1, 2, 3]); // Returns 1
 ```
-**tail(array)** </br>
+**`tail(array`** </br></br>
 Returns a new array with all elements except the first one.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const remainingElements = _.tail([1, 2, 3]); // Returns [2, 3]
 ```
-**middle(array)**
+**`middle(array`** </br></br>
 Returns an array containing the middle elements of the input array.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const middleElements = _.middle([1, 2, 3, 4, 5]); // Returns [2, 3]
 ```
-**assertArraysEqual(actual, expected)**
+**`assertArraysEqual(actual, expected`** </br></br>
 Compares two arrays for equality and logs the result.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 _.assertArraysEqual([1, 2, 3], [1, 2, 3]); // Logs "✅ Assertion Passed: [1, 2, 3] === [1, 2, 3]"
 ```
-**assertEqual(actual, expected)**
+**`assertEqual(actual, expected`** </br></br>
 Compares two values for equality and logs the result.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 _.assertEqual(5, 5); // Logs "✅ Assertion Passed: 5 === 5"
 ```
-**assertObjectsEqual(actual, expected)**
+**`assertObjectsEqual(actual, expected`** </br></br>
 Compares two objects for equality and logs the result.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 _.assertObjectsEqual({ a: 1, b: 2 }, { b: 2, a: 1 }); // Logs "✅ Assertion Passed: [object Object] === [object Object]"
 ```
-**without(source, itemsToRemove)**
+**`without(source, itemsToRemove`** </br></br>
 Returns a new array with elements from the source array without the specified items.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const filteredArray = _.without([1, 2, 3, 4, 5], [3, 4]); // Returns [1, 2, 5]
 ```
-**countLetters(sentence)**
+**`countLetters(sentence`** </br></br>
 Returns an object containing the count of each letter in the input sentence.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const letterCounts = _.countLetters("Hello, World!"); // Returns an object with letter counts
 ```
-**countOnly(allItems, itemsToCount)**
+**`countOnly(allItems, itemsToCount`** </br></br>
 Returns an object with the counts of specified items in the input array.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const countResult = _.countOnly(["a", "b", "c", "a", "b"], { a: true, b: true }); // Returns an object with counts
 ```
-**findKey(object, callback)**
+**`findKey(object, callback`** </br></br>
 Returns the first key in the object that satisfies the given callback.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const foundKey = _.findKey({ a: 1, b: 2, c: 3 }, x => x === 2); // Returns "b"
 ```
-**findKeyByValue(object, value)**
+**`findKeyByValue(object, value`** </br></br>
 Returns the key in the object with the specified value.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const foundKeyByValue = _.findKeyByValue({ a: 1, b: 2, c: 3 }, 2); // Returns "b"
 ```
-**flatten(arr)**
+**`flatten(arr`** </br></br>
 Returns a new array with all nested arrays flattened.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const flattenedArray = _.flatten([[1, 2], [3, 4], [5, 6]]); // Returns [1, 2, 3, 4, 5, 6]
 ```
-**letterPositions(sentence)**
+**`letterPositions(sentence`** </br></br>
 Returns an object containing arrays of indices for each letter in the input sentence.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const letterPositionObj = _.letterPositions("Hello, World!"); // Returns an object with arrays of indices
 ```
-**map(array, callback)**
+**`map(array, callback`** </br></br>
 Returns a new array with the results of applying the callback function to each element.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const mappedArray = _.map([1, 2, 3], x => x * 2); // Returns [2, 4, 6]
 ```
-**takeUntil(array, callback)**
+**`takeUntil(array, callback`** </br></br>
 Returns a new array containing elements from the input array until the callback returns a truthy value.
 
-***Example:***
+<b>Example:</b>
 
 ```javascript
 const takenArray = _.takeUntil([1, 2, 3, 4, 5], x => x === 3); // Returns [1, 2]
