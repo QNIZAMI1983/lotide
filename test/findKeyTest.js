@@ -31,32 +31,3 @@ describe('findKey', function() {
     assertEqual(result4, undefined); // It should output: "✅ Assertion Passed: undefined === undefined"
   });
 });
-const assertEqual = require('../assertEqual');
-const findKey = require('../findKey');
-
-describe('findKey', function() {
-  const restaurants = {
-    "Blue Hill": { stars: 1 },
-    "Akaleri": { stars: 3 },
-    "noma": { stars: 2 },
-    "elBulli": { stars: 3 },
-    "Ora": { stars: 2 },
-    "Akelarre": { stars: 3 }
-  };
-
-  it('should find the first key with stars === 2', function() {
-    assertEqual(findKey(restaurants, x => x.stars === 2), "noma");
-  });
-
-  it('should find the first key with stars === 3', function() {
-    assertEqual(findKey(restaurants, x => x.stars === 3), "Akaleri");
-  });
-
-  it('should not find any key with stars === 4', function() {
-    assertEqual(findKey(restaurants, x => x.stars === 4), undefined);
-  });
-
-  it('should not find any key with an empty object', function() {
-    assertEqual(findKey({}, x => x.stars === 2), undefined);
-  });
-});

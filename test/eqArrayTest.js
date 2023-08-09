@@ -1,4 +1,4 @@
-const eqArrays = require('../eqArray');
+const eqArrays = require('../eqArrays');
 
 
 // Test case 1: Arrays with the same elements in the same order
