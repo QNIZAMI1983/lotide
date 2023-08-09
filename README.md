@@ -14,10 +14,11 @@ This project was created and published as part of my learnings at Lighthouse Lab
 
 ```sh
 npm install @qnizami1983/lotide
+```
 
 
 **Require it:**
 
-```Javascript
+```sh
 const _ = require('@qnizami1983/lotide');`
-
+```
