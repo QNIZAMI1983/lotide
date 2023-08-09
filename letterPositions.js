@@ -5,12 +5,10 @@ const letterPositions = function(sentence) {
     const char = sentence[i];
 
     if (/[a-zA-Z]/.test(char)) {
-      const letter = char.toUpperCase();
-
-      if (results[letter]) {
-        results[letter].push(i);
+      if (results[char]) {
+        results[char].push(i);
       } else {
-        results[letter] = [i];
+        results[char] = [i];
       }
     }
   }
@@ -19,3 +17,4 @@ const letterPositions = function(sentence) {
 };
 
 module.exports = letterPositions;
+

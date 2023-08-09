@@ -1,5 +1,5 @@
-const assertEqual = require('./assertEqual'); // Import assertEqual function
-const findKeyByValue = require('./findKeyByValue');
+const assertEqual = require('../assertEqual'); // Import assertEqual function
+const findKeyByValue = require('../findKeyByValue');
 
 describe('findKeyByValue', function() {
   const myObject = {
@@ -24,3 +24,4 @@ describe('findKeyByValue', function() {
     assertEqual(result3, undefined);
   });
 });
+

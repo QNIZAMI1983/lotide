@@ -1,5 +1,5 @@
 const eqArrays = require('../eqArray');
-const assertEqual = require('.../assertEqual');
+const assertEqual = require('../assertEqual');
 const flatten = require('../flatten');
 
 describe('flatten', function() {
